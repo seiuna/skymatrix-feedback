@@ -1,0 +1,53 @@
+name: Bug 反馈
+description: 报告崩溃、报错或功能异常
+title: "[Bug] "
+body:
+  - type: input
+    id: skymatrix-version
+    attributes:
+      label: SkyMatrix 版本
+      placeholder: 请填写具体版本号或构建编号
+    validations:
+      required: true
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft 版本
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 运行环境
+      description: 操作系统、Java 版本、模组加载器版本，以及可能相关的其他模组。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开……
+        2. 点击……
+        3. 出现……
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期表现
+      description: 你希望发生什么？
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际表现
+      description: 实际发生了什么？如有报错，请提供完整错误信息。
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: 截图、日志或补充信息
+      description: 可拖入截图或日志文件。提交前请删去密码、令牌和其他私人信息。
